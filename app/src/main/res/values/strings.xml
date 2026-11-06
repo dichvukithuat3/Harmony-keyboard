@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bàn phím Hà</string>
+    <string name="ime_name">Bàn phím Hà (Tiếng Việt)</string>
+    <string name="subtype_vi">Tiếng Việt</string>
+    <string name="subtype_en">English</string>
+
+    <string name="settings_title">Cài đặt bàn phím</string>
+    <string name="section_input">Kiểu gõ</string>
+    <string name="section_feedback">Phản hồi khi gõ</string>
+    <string name="section_layout">Giao diện</string>
+
+    <string name="input_method_label">Kiểu gõ tiếng Việt</string>
+    <string name="telex">Telex</string>
+    <string name="vni">VNI</string>
+
+    <string name="vibrate_label">Rung khi bấm phím</string>
+    <string name="sound_label">Âm thanh khi bấm phím</string>
+    <string name="popup_label">Hiện ký tự phóng to khi bấm</string>
+    <string name="number_row_label">Hiện hàng số trên cùng</string>
+    <string name="height_label">Chiều cao bàn phím</string>
+
+    <string name="step1_title">Bước 1 — Bật bàn phím</string>
+    <string name="step1_desc">Mở danh sách bàn phím của hệ thống và bật “Bàn phím Hà”.</string>
+    <string name="step1_button">Mở cài đặt bàn phím</string>
+
+    <string name="step2_title">Bước 2 — Chọn làm bàn phím đang dùng</string>
+    <string name="step2_desc">Chọn “Bàn phím Hà” làm bàn phím hiện tại.</string>
+    <string name="step2_button">Chọn bàn phím</string>
+
+    <string name="step3_title">Bước 3 — Gõ thử</string>
+    <string name="step3_desc">Gõ thử vào ô bên dưới. Ví dụ Telex: vieejt → việt, dduowcj → được.</string>
+    <string name="try_hint">Gõ thử ở đây…</string>
+
+    <string name="height_short">Thấp</string>
+    <string name="height_normal">Vừa</string>
+    <string name="height_tall">Cao</string>
+</resources>

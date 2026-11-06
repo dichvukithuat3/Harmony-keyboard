@@ -1,0 +1,51 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.hakeyboard'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.hakeyboard"
+        // 21 keeps us installable on everything from Android 5 upward, which
+        // covers every AOSP-based HarmonyOS release (4.x and earlier).
+        minSdk 21
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("../keystore/hakeyboard.jks")
+            storePassword "hakeyboard2026"
+            keyAlias "hakeyboard"
+            keyPassword "hakeyboard2026"
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint {
+        abortOnError false
+    }
+}
+
+dependencies {
+    // Deliberately no third-party libraries: a keyboard sees everything the
+    // user types, so the smaller the dependency surface, the better.
+}

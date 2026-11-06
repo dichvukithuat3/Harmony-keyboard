@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings_title"
+            android:textColor="@color/app_text"
+            android:textSize="24sp"
+            android:paddingBottom="16dp" />
+
+        <!-- Setup steps -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/step1_title"
+                android:textColor="@color/app_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/step1_desc"
+                android:textColor="@color/app_text_dim"
+                android:textSize="13sp"
+                android:paddingBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnEnable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/step1_button" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/step2_title"
+                android:textColor="@color/app_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/step2_desc"
+                android:textColor="@color/app_text_dim"
+                android:textSize="13sp"
+                android:paddingBottom="8dp" />
+
+            <Button
+                android:id="@+id/btnPick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/step2_button" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/step3_title"
+                android:textColor="@color/app_text"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/step3_desc"
+                android:textColor="@color/app_text_dim"
+                android:textSize="13sp"
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/tryBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/try_hint"
+                android:textColor="@color/app_text"
+                android:textColorHint="@color/app_text_dim"
+                android:inputType="textMultiLine"
+                android:minLines="2" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Typing mode -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/input_method_label"
+                android:textColor="@color/app_text"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/modeGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/modeTelex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/telex"
+                    android:textColor="@color/app_text" />
+
+                <RadioButton
+                    android:id="@+id/modeVni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/vni"
+                    android:textColor="@color/app_text"
+                    android:layout_marginStart="24dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <!-- Feedback + layout options -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="16dp">
+
+            <CheckBox
+                android:id="@+id/chkVibrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/vibrate_label"
+                android:textColor="@color/app_text" />
+
+            <CheckBox
+                android:id="@+id/chkSound"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sound_label"
+                android:textColor="@color/app_text" />
+
+            <CheckBox
+                android:id="@+id/chkPopup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/popup_label"
+                android:textColor="@color/app_text" />
+
+            <CheckBox
+                android:id="@+id/chkNumberRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/number_row_label"
+                android:textColor="@color/app_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/height_label"
+                android:textColor="@color/app_text"
+                android:textSize="16sp"
+                android:paddingTop="12dp" />
+
+            <RadioGroup
+                android:id="@+id/heightGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/heightShort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/height_short"
+                    android:textColor="@color/app_text" />
+
+                <RadioButton
+                    android:id="@+id/heightNormal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/height_normal"
+                    android:textColor="@color/app_text"
+                    android:layout_marginStart="20dp" />
+
+                <RadioButton
+                    android:id="@+id/heightTall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/height_tall"
+                    android:textColor="@color/app_text"
+                    android:layout_marginStart="20dp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="24dp" />
+    </LinearLayout>
+</ScrollView>
